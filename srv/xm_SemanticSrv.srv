@@ -1,0 +1,3 @@
+std_msgs/String goal
+---
+geometry_msgs/PoseStamped goal_point
