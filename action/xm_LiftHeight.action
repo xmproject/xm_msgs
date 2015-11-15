@@ -1,0 +1,10 @@
+# When xm_robot recognize some objects, we make our lift_joint lift up from bottom to top, and in the last, the lift_joint move down to the middle of the xm_robot.
+
+# Goal
+float64 height
+---
+# Result
+bool    complete
+---
+# Feedback
+float64 height

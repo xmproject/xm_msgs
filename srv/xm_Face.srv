@@ -1,0 +1,7 @@
+#request command num
+uint8 cmd
+std_msgs/String req_name
+---
+std_msgs/String rep_name
+float32 bel
+bool is_succ

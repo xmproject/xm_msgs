@@ -1,0 +1,13 @@
+# When xm_robot start to pick object, we make xm_robot's mechanical arm move to the appropriate height by doing some accurate mathematical compuation.
+
+# Goal
+float64 distance_x
+float64 distance_z
+float64 height
+---
+# Result
+bool    complete
+float64 distance
+---
+# Feedback
+float64 height

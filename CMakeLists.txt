@@ -10,6 +10,7 @@ find_package(catkin REQUIRED COMPONENTS
   sensor_msgs
   std_msgs
   message_generation
+  actionlib_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -55,28 +56,47 @@ find_package(catkin REQUIRED COMPONENTS
    xm_TTSNum.msg
    xm_Task.msg
    xm_SemanticMap.msg
+   xm_JointPos.msg
+   xm_GripperCommand.msg
+   xm_MultiJointPos.msg
+   xm_Tracker.msg
+   xm_Angle.msg
+   xm_Object.msg   
  )
 
 ## Generate services in the 'srv' folder
  add_service_files(
    FILES
-   xm_FaceSrv.srv
-   xm_KinectSrv.srv
-   xm_SemanticSrv.srv
- )
+   xm_Face.srv
+   xm_Kinect.srv
+   xm_Semantic.srv
+   xm_ArmPosition.srv
+   xm_Pan.srv
+   xm_Pose.srv
+   xm_SerialSwitchMode.srv
+   xm_ObjectDetect.srv
+)
 
 ## Generate actions in the 'action' folder
-# add_action_files(
-#   FILES
-#   Action1.action
-#   Action2.action
-# )
+add_action_files(
+   DIRECTORY
+   action
+   FILES
+   xm_LiftHeight.action
+   xm_ArmHeight.action
+   xm_ArmPosition.action
+   xm_GripperCommand.action
+   xm_WristPosition.action
+)
 
 ## Generate added messages and services with any dependencies listed here
  generate_messages(
    DEPENDENCIES
-   geometry_msgs   sensor_msgs   std_msgs
- )
+   geometry_msgs   
+   sensor_msgs   
+   std_msgs
+   actionlib_msgs
+)
 
 ###################################
 ## catkin specific configuration ##

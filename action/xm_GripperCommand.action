@@ -1,0 +1,11 @@
+# xm_robot need to receive the object's accurate width to finish the pick.
+
+# Goal
+xm_msgs/xm_GripperCommand command
+---
+# Result
+bool complete
+---
+# Feedback
+float64 position
+float64 torque

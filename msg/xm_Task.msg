@@ -1,3 +1,3 @@
-std_msgs/String task_name
 uint8 status
-std_msgs/String latched_str
+uint8 place
+uint8 task

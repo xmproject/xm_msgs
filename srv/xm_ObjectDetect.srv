@@ -1,0 +1,3 @@
+int32 object_id
+---
+xm_msgs/xm_Object object

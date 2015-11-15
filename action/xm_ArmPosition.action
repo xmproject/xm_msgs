@@ -1,0 +1,10 @@
+# xm_robot can move the mechanical arm to any position that under joint's limit.
+
+# Goal
+float64[] joint_positions
+---
+# Result
+bool      complete
+---
+# Feedback
+float64[] joint_positions

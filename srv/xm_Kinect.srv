@@ -1,0 +1,11 @@
+uint8 cmd 
+std_msgs/String req_name
+#cmd 0x01 : record a known name person
+#cmd 0x02 : find a known name person and return position
+#cmd 0x03 : ask whether there is any one
+#cmd 0x05 : ask a konwn person's action
+---
+std_msgs/String rep_name
+geometry_msgs/Vector3 position
+std_msgs/String action
+float32 bel

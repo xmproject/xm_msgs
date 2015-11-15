@@ -1,0 +1,10 @@
+# This action define the interface of wrist's angle, wirst can pitch and rotate some angle.
+
+# Goal
+float64 angle
+---
+# Result
+bool complete
+---
+# Feedback
+float64 angle
